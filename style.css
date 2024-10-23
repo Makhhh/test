@@ -1,0 +1,73 @@
+.square {
+    background: blue;
+    height: 100px;
+    width: 100px;
+    border: solid black 2px;
+    position: relative;
+
+}
+
+.square:hover {
+    animation: square-scale 2s 1;
+}
+
+@keyframes square-scale {
+    0% {
+        top: 5px;
+        left: 5px;
+        transform: rotate(0deg);
+    }
+    50% {
+        top: 30px;
+        left: 30px;
+    }
+    100% {
+        top: 50px;
+        left: 50px;
+        transform: rotate(180deg);
+        scale: 2;
+        background-color: #e089d0;
+    }
+}
+
+.background-circle {
+    border: solid black 2px;
+    width: 400px;
+}
+
+.circle {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: relative;
+    animation: left-right 5s infinite;
+}
+
+@keyframes left-right  {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 300px;
+    }
+    100% {
+        left: 0px
+    }
+}
+.loading img {
+    height: 150px;
+    width: 150px;
+    transition: all 5s;
+    animation: loading 15s infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(3000deg);
+    }
+
+}
